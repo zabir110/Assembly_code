@@ -1,0 +1,19 @@
+org 100h
+
+  MOV AX,000H
+  INC AX
+
+CALL INCREMENT
+
+  JMP EXIT
+
+INCREMENT PROC NEAR
+  INC AX
+  INC AX 
+  
+  RET
+  ENDP 
+
+
+EXIT:
+ret   
